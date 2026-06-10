@@ -22,8 +22,8 @@ jobs:
 
       - name: Build Project
         env:
-          VITE_MERCUR_BACKEND_URL: http://s1.huylio.com
-          VITE_MERCUR_VENDOR_URL: http://vendor.huylio.com
+          VITE_MERCUR_BACKEND_URL: https://s1.huylio.com
+          VITE_MERCUR_VENDOR_URL: https://vendor.huylio.com
         run: bun run build
 
       # Deploy Admin Dashboard
