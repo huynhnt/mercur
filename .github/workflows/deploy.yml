@@ -21,6 +21,9 @@ jobs:
         run: bun install
 
       - name: Build Project
+        env:
+          VITE_MERCUR_BACKEND_URL: http://api.huylio.com
+          VITE_MERCUR_VENDOR_URL: http://vendor.huylio.com
         run: bun run build
 
       # Deploy Admin Dashboard
